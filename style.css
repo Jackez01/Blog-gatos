@@ -8,7 +8,7 @@
 
 :root {
   font-size: 62.5%;
-
+  --color-blue-200: #518fa3;
   --color-blue-500: #387E96;
 }
 
@@ -16,20 +16,110 @@ body{
   font-family: "Mulish", sans-serif;
   font-size: 1.6rem;
   background-color: white;
-  color: var(--color-blue-500);
+  color: black;
+}
+
+#blog {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.container {
+ padding: 1.6rem 2.6rem; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 7.2rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+ 
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  background-color: var(--color-blue-200);
+  opacity: 0.5;
+  
+  border: 0;
+}
+
+.input-wrapper input::placeholder {
+  color: white;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 main h1 {
   font-size: 2.4rem;
+  margin-bottom: .8rem;
 }
 
-main p {
-  font-size: 1.6rem;
+main {
+  max-width: 194rem;  
+  margin-inline: auto;
+
+  padding: 1.6rem 2.4rem;
+  box-sizing: content-box;
 }
 
 main h2 {
   font-size: 2.4rem;
 }
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  font-size: 1.4rem;
+  
+}
+
+.image {
+width: 100%;
+margin-bottom: 3.1rem;
+}
+
+footer {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+header, footer {
+  background-color: var(--color-blue-500);
+}
+
+
+
+main p {
+  font-size: 1.6rem;
+}
+
 
 section h2 {
   font-size: 1.8rem;
@@ -39,7 +129,6 @@ section p {
   font-size: 1.4rem;
 }
 
-footer p {
- font-size: 1.6rem;
-text-align: center;
-}
+
+
+
